@@ -1,0 +1,42 @@
+* {
+  border: 1px solid #999;
+}
+
+html body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.box {
+  width: 300px;
+}
+
+.box > .song_img {
+  width: 300px;
+  height: 300px;
+}
+
+.box > .time_line {
+  width: 200px;
+  height: 5px;
+}
+
+.box > .button {
+  text-align: center;
+}
+
+.box > .button > button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+  outline: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.box > h5 {
+  margin: 10px;
+  padding: 10px;
+}
+/*# sourceMappingURL=index.css.map */
