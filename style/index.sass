@@ -5,18 +5,19 @@ $color-bg: #f0f0f0
 
 *
     // border: 1px solid #999
+    font-family: 微軟正黑體
 
 html body 
     padding: 0px
     margin: 0px
     position: relative
     background-color: $color-bg
-
+    
+    
 .box
     width: 300px
-    height: 
+    
     border-radius: 5px
-    // overflow: hidden
     border: 1px solid lighten($color-grey_blue,40)
     box-shadow: 0px 0px 10px lighten($color-grey_blue,20)
     position: absolute
@@ -24,17 +25,19 @@ html body
     top: 100px
     transform: translateX(-50%)
     background-color: #fdfdfd
-    
+    // filter: blur(1.5rem)
     >.like
         position: absolute
-        padding-left: 87%
+        padding-left: 89%
         padding-top: 8%
-        font-size: 25px
-        color: $color-pink
+        font-size: 20px
+        color: #E4E4E4
+        transition: 1s
+ 
 
     >.list
         position: absolute
-        padding-left: 8%
+        padding-left: 5%
         padding-top: 8%
         font-size: 15px
         color: #fefefe
@@ -89,8 +92,8 @@ html body
         margin-bottom: 10px
         
         >button
-            width: 50px
-            height: 50px
+            width: 60px
+            height: 60px
             border: none
             background: none
             outline: none
@@ -99,26 +102,34 @@ html body
             cursor: pointer
            
         >.btn_start_stop
+            border: 1px solid rgba(0,0,0,0.03)
             border-radius: 100%
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.2)
+            box-shadow: -2px 4px 10px rgba(0,0,0,0.2)
             margin-left: 10px
             margin-right: 10px
               
             
         >.btn_start_stop:hover
-            box-shadow: 0px 0px 15px rgba(0,0,0,0.2)    
+            box-shadow: -2px 3px 10px rgba(0,0,0,0.2)    
         >.btn_start_stop:active
-            box-shadow: 0px 0px 5px rgba(0,0,0,0.2)
+            box-shadow: -2px 2px 10px rgba(0,0,0,0.2)
 
       
         
     >h3 
-        margin: 10px
-        margin-bottom: 5px
+        margin-top: 2px
+        margin-left: 10px
+        margin-bottom: 0px
         padding: 10px    
         color: $color-text
 
-    
+    >.music
+        width: 300px
+        height: 65px
+        background: url("/images/music.png")
+        position: absolute
+        bottom: 0px
+        
 // button
 button
     font-size: 20px
@@ -129,6 +140,6 @@ button
 .fa-play
     color: $color-pink
     font-size: 25px
-    padding-left: 6px
+    padding-left: 7px
     
     
