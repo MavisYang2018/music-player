@@ -1,41 +1,134 @@
+$color-grey_blue: #646F85
+$color-pink: #D44B77
+$color-text: #4B4A68
+$color-bg: #f0f0f0
+
 *
-    border: 1px solid #999
+    // border: 1px solid #999
 
 html body 
     padding: 0px
     margin: 0px
+    position: relative
+    background-color: $color-bg
 
 .box
     width: 300px
+    height: 
     border-radius: 5px
-    overflow: hidden
+    // overflow: hidden
+    border: 1px solid lighten($color-grey_blue,40)
+    box-shadow: 0px 0px 10px lighten($color-grey_blue,20)
+    position: absolute
+    left: 50%
+    top: 100px
+    transform: translateX(-50%)
+    background-color: #fdfdfd
     
-    
+    >.like
+        position: absolute
+        padding-left: 87%
+        padding-top: 8%
+        font-size: 25px
+        color: $color-pink
+
+    >.list
+        position: absolute
+        padding-left: 8%
+        padding-top: 8%
+        font-size: 15px
+        color: #fefefe
+
     >.song_img 
-        width: 300px
-        height: 300px
-        overflow: hidden
-        background: url("/images/song-img.jpg")
-        background-position: center center
         
+        width: 320px
+        height: 320px
+        margin-left: -4%
+        box-shadow: 0px 0px 10px lighten($color-grey_blue,20)
+        
+        background: url("/images/showimage.jpg")
+        background-position: center center
+        background-size: cover
+
+        >.left
+            position: absolute
+            margin-left: -35px
+            margin-top: 145px
+            font-size: 50px
+            color: #DBDBDB
+            cursor: pointer
+            transition-duration: 1s
+
+        >.left:hover 
+            color: #B1B1B1
+            margin-left: -40px
+
+                
+        >.right
+            position: absolute
+            margin-left: 330px
+            margin-top: 145px
+            font-size: 50px
+            color: #DBDBDB
+            cursor: pointer
+            transition-duration: 1s
+
+        >.right:hover
+            color: #B1B1B1
+            margin-left: 335px
+
     >.time_line
         width: 200px
         height: 5px
+        background-color: $color-pink
+        box-shadow: 0px 0px 10px #F5A1BC
+        cursor: pointer
 
     >.button
         text-align: center
+        margin-bottom: 10px
         
         >button
-            width: 40px
-            height: 40px
+            width: 50px
+            height: 50px
             border: none
-            border-radius: 100%
+            background: none
             outline: none
-            margin: 10px
+            margin-bottom: 10px
 
             cursor: pointer
+           
+        >.btn_start_stop
+            border-radius: 100%
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2)
+            margin-left: 10px
+            margin-right: 10px
+              
+            
+        >.btn_start_stop:hover
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2)    
+        >.btn_start_stop:active
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.2)
 
-
-    >h5 
+      
+        
+    >h3 
         margin: 10px
+        margin-bottom: 5px
         padding: 10px    
+        color: $color-text
+
+    
+// button
+button
+    font-size: 20px
+.fa-backward,.fa-forward
+    
+    color: $color-grey_blue
+
+.fa-play
+    color: $color-pink
+    font-size: 25px
+    padding-left: 6px
+    
+    

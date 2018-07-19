@@ -1,47 +1,143 @@
-* {
-  border: 1px solid #999;
-}
-
 html body {
   padding: 0px;
   margin: 0px;
+  position: relative;
+  background-color: #f0f0f0;
 }
 
 .box {
   width: 300px;
   border-radius: 5px;
-  overflow: hidden;
+  border: 1px solid #d5d9e0;
+  -webkit-box-shadow: 0px 0px 10px #9ba3b4;
+          box-shadow: 0px 0px 10px #9ba3b4;
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fdfdfd;
+}
+
+.box > .like {
+  position: absolute;
+  padding-left: 87%;
+  padding-top: 8%;
+  font-size: 25px;
+  color: #D44B77;
+}
+
+.box > .list {
+  position: absolute;
+  padding-left: 8%;
+  padding-top: 8%;
+  font-size: 15px;
+  color: #fefefe;
 }
 
 .box > .song_img {
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  background: url("/images/song-img.jpg");
+  width: 320px;
+  height: 320px;
+  margin-left: -4%;
+  -webkit-box-shadow: 0px 0px 10px #9ba3b4;
+          box-shadow: 0px 0px 10px #9ba3b4;
+  background: url("/images/showimage.jpg");
   background-position: center center;
+  background-size: cover;
+}
+
+.box > .song_img > .left {
+  position: absolute;
+  margin-left: -35px;
+  margin-top: 145px;
+  font-size: 50px;
+  color: #DBDBDB;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.box > .song_img > .left:hover {
+  color: #B1B1B1;
+  margin-left: -40px;
+}
+
+.box > .song_img > .right {
+  position: absolute;
+  margin-left: 330px;
+  margin-top: 145px;
+  font-size: 50px;
+  color: #DBDBDB;
+  cursor: pointer;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.box > .song_img > .right:hover {
+  color: #B1B1B1;
+  margin-left: 335px;
 }
 
 .box > .time_line {
   width: 200px;
   height: 5px;
+  background-color: #D44B77;
+  -webkit-box-shadow: 0px 0px 10px #F5A1BC;
+          box-shadow: 0px 0px 10px #F5A1BC;
+  cursor: pointer;
 }
 
 .box > .button {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .box > .button > button {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border: none;
-  border-radius: 100%;
+  background: none;
   outline: none;
-  margin: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 
-.box > h5 {
+.box > .button > .btn_start_stop {
+  border-radius: 100%;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.box > .button > .btn_start_stop:hover {
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box > .button > .btn_start_stop:active {
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.box > h3 {
   margin: 10px;
+  margin-bottom: 5px;
   padding: 10px;
+  color: #4B4A68;
+}
+
+button {
+  font-size: 20px;
+}
+
+.fa-backward, .fa-forward {
+  color: #646F85;
+}
+
+.fa-play {
+  color: #D44B77;
+  font-size: 25px;
+  padding-left: 6px;
 }
 /*# sourceMappingURL=index.css.map */
